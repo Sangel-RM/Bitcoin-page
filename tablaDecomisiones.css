@@ -1,0 +1,73 @@
+:root{
+    --lg:24px;
+    --sm:18px;
+    --mn:14px;
+    --ColorOrange:#FF9536;
+    --ColorGrayText:#757575;
+    --ColorGrayTextPrice:#B5B0AC;
+    --ColorSofOrange: #FFE9D4;
+    --backgroundBlack:#201E1C;
+    --backgoundFooter:#F7931A;
+    --RayaBorde:#c7c3c1;
+    --colorBlueText:#1A9AF7;
+    --colorSoftBlue:#E7F5FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+.containerMoney{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+}
+.containerMoney .titleMoneyBlue{
+    margin: 20px 0px 10px 10px;
+    color: var(--colorBlueText);
+    font-weight: 700;
+}
+.containerMoney .tablaMoney{
+    border-radius: 5px;
+    background: #ffffff;
+}
+.containerMoney .tablaMoney .CajaCoin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.containerMoney .tablaMoney .CajaCoin:nth-child(1),
+.containerMoney .tablaMoney .CajaCoin:nth-child(2),
+.containerMoney .tablaMoney .CajaCoin:nth-child(3){
+    border-bottom: 1px solid var(--RayaBorde);
+}
+.containerMoney .tablaMoney .price{
+    display: flex;
+}
+.containerMoney .tablaMoney .price img{
+    padding-left: 10px;
+}
+.containerMoney .infActualMoneyBlue{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorSoftBlue);
+    border-radius: 15px;
+}
+.containerMoney .infActualMoney p{
+    font-size: var(--mn);
+    font-weight: bold;
+}
+.containerMoney .infActualMoney p span{
+    font-weight: 400;
+    color: var(--ColorGrayText);
+}
