@@ -1,0 +1,25 @@
+@media (min-width:580px){
+    .MainContainer .seccion1 .ContainerTasas::-webkit-scrollbar{
+        display: none;
+    }
+    .MainContainer .seccion1 .ContainerTasas{
+        justify-content: center;
+    }
+}
+@media (min-width:700px){
+    .MainContainer .seccion2 .container .ContainerSlider{
+        max-width: 500px;
+    }
+}
+@media (min-width:900px){
+    .MainContainer .seccion2 .container{
+        width: 90%;
+    }
+    .MainContainer .seccion2 .container .ContainerSliderAll{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .MainContainer .seccion2 .container .ContainerSlider{
+        max-width: 400px;
+    }
+}
