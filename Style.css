@@ -59,12 +59,15 @@ header .primaryButton{
     width: 250px;
     height: 40px;
     position: relative;
-    font-weight: bold;
+    font-weight: 600;
     top: 22px;
     background-color: #faf8f7;
     border: none;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 4px;
+}
+header .primaryButton:hover{
+    color: var(--ColorOrange);
 }
 header .primaryButton i{
     padding: 0 0 0 5px;
@@ -143,6 +146,13 @@ header .primaryButton:hover{
     justify-content: space-between;
     align-items: center;
 }
+.MainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin td:nth-child(2) p span{
+    color: green;
+    cursor:default;
+}
+.MainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin td:nth-child(2) p span:hover{
+    color: red;
+}
 .MainContainer .seccion1 .ContainerTasa .containerMoney .titleMoney{
     text-align: center;
     color: var(--ColorOrange);
@@ -171,7 +181,7 @@ header .primaryButton:hover{
     background-color: var(--colorSoftBlue);
 }
 .MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney p span{
-    color: var(--ColorGrayTextPrice);
+    color: var(--backgroundBlack);
     font-size: var(--mn);
 }
 /* seccion 2 */
@@ -333,7 +343,7 @@ header .primaryButton:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffff;
     border: 2px solid var(--ColorOrange);
 }
 .MainContainer .seccion4 .container .selectPlan p{
@@ -344,6 +354,7 @@ header .primaryButton:hover{
 .MainContainer .seccion4 .container .selectPlan p a{
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 .MainContainer .seccion4 .container .selectPlan p a:hover{
     color: blue;
