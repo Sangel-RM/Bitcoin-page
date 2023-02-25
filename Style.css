@@ -77,7 +77,7 @@ header .primaryButton:hover{
 }
 /* main */
 .MainContainer{
-    background: #e5e5e5;
+    background: rgba(20,26,34,1);
     width: 100%;
     margin: 0 auto;
 }
@@ -98,11 +98,13 @@ header .primaryButton:hover{
     text-align: center;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #ffff;
 }
 .MainContainer .seccion1 .tasaTimeInf{
     text-align: center;
     font-weight: 500;
     padding-bottom: 50px;
+    color: #ccc;
 }
 .MainContainer .seccion1 .Container-de-las-tasas{
     display: flex;
@@ -156,8 +158,9 @@ header .primaryButton:hover{
 .MainContainer .seccion1 .ContainerTasa .containerMoney .titleMoney{
     text-align: center;
     color: var(--ColorOrange);
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
     font-weight: bold;
+    border-bottom: 1px solid;
 }.MainContainer .seccion1 .ContainerTasa .containerMoney .titleMoneyBlue{
     color: var(--colorBlueText);
 }
@@ -281,11 +284,12 @@ header .primaryButton:hover{
     font-size: var(--lg);
     font-weight: 600;
     padding-top: 80px;
+    color: #fff;
 }
 .MainContainer .seccion4 .container .subtitle{
     text-align: center;
     padding: 20px 0 40px 0;
-    color: var(--ColorGrayText);
+    color: #ccc;
 }
 .MainContainer .seccion4 .containerPlan{
     background-color: #1C2833;
@@ -372,15 +376,28 @@ header .primaryButton:hover{
 footer{
     width: 100%;
     margin: 0 auto;
-    height: 150px;
+    height: 100px;
     background: var(--backgoundFooter);
     color: #ffff;
 }
 footer nav{
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer nav p{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+}
+footer nav div{
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 footer nav ul{
     list-style: none;
