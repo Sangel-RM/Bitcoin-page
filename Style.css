@@ -176,12 +176,12 @@ header .primaryButton:hover{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: var(--ColorSofOrange);
+    background-color: var(--ColorOrange);
     font-size: var(--mn);
     font-weight: bold;
 }
 .MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoneyBlue{
-    background-color: var(--colorSoftBlue);
+    background-color: var(--colorBlueText);
 }
 .MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney p span{
     color: var(--backgroundBlack);
