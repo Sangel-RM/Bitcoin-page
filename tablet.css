@@ -1,8 +1,8 @@
 @media (min-width:580px){
-    .MainContainer .seccion1 .ContainerTasas::-webkit-scrollbar{
+    .MainContainer .seccion1 .Container-de-las-tasas::-webkit-scrollbar{
         display: none;
     }
-    .MainContainer .seccion1 .ContainerTasas{
+    .MainContainer .seccion1 .Container-de-las-tasas{
         justify-content: center;
     }
 }

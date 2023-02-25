@@ -21,53 +21,65 @@ html,body{
     height: 100%;
     font-family: 'DM Sans', sans-serif;
 }
-.containerMoney{
+.mainContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .ContainerTasa{
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background: #1C2833;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.24);
+}
+.mainContainer .seccion1 .ContainerTasa .containerMoney{
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 200px;
 }
-.containerMoney .titleMoneyBlue{
-    margin: 20px 0px 10px 10px;
-    color: var(--colorBlueText);
-    font-weight: 700;
-}
-.containerMoney .tablaMoney{
-    border-radius: 5px;
-    background: #ffffff;
-}
-.containerMoney .tablaMoney .CajaCoin{
+.mainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin{
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 10px;
+    align-items: center;
 }
-.containerMoney .tablaMoney .CajaCoin:nth-child(1),
-.containerMoney .tablaMoney .CajaCoin:nth-child(2),
-.containerMoney .tablaMoney .CajaCoin:nth-child(3){
-    border-bottom: 1px solid var(--RayaBorde);
+.mainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin p{
+    color: #ffff;
+    font-weight: bold;
 }
-.containerMoney .tablaMoney .price{
+.mainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin td:nth-child(2) p{
+    width: 90px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.containerMoney .tablaMoney .price img{
-    padding-left: 10px;
+.mainContainer .seccion1 .ContainerTasa .containerMoney .titleMoney{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0 0 0;
+    font-weight: bold;
 }
-.containerMoney .infActualMoneyBlue{
+.mainContainer .seccion1 .ContainerTasa .containerMoney .tasaMoney .CajaCoin .LogoCripto{
+    width: 15px;
+    height: 15px;
+}
+.mainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney{
     width: 100%;
     height: 40px;
-    margin: 20px 0 60px 0;
+    margin: 0 0 10px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: var(--colorSoftBlue);
+    align-items: center;
     border-radius: 15px;
-}
-.containerMoney .infActualMoney p{
+    background-color: var(--ColorSofOrange);
     font-size: var(--mn);
     font-weight: bold;
 }
-.containerMoney .infActualMoney p span{
-    font-weight: 400;
-    color: var(--ColorGrayText);
+.mainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney p span{
+    color: var(--ColorGrayTextPrice);
+    font-size: var(--mn);
 }

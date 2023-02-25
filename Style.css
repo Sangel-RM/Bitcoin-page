@@ -91,105 +91,88 @@ header .primaryButton:hover{
     align-items: center;
     justify-content: center;
 }
-
-.MainContainer .seccion1 .ContainerTasas{
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
 .MainContainer .seccion1 .tasaInf{
     text-align: center;
-    font-size: 24px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 .MainContainer .seccion1 .tasaTimeInf{
     text-align: center;
-    font-size: 14px;
-    margin: 20px 10px 40px 10px;
-    color: var(--ColorGrayText);
+    font-weight: 500;
+    padding-bottom: 50px;
 }
-.MainContainer .seccion1 .containerMoney{
+.MainContainer .seccion1 .Container-de-las-tasas{
+    display: flex;
+    margin: 30px 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.MainContainer .seccion1 .ContainerTasa{
     scroll-snap-align: center;
-    box-shadow:0px 4px 8px rgb(89 73 30 / 16%);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.24);
     border-radius: 8px;
     width: 100%;
     min-width: 250px;
     max-width: 290px;
-    height: 280px;
-    margin: 50px 20px;
+    margin: 0 20px 20px;
+    background: #1C2833;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
-.MainContainer .seccion1 .containerMoney .titleMoney{
-    color: var(--ColorOrange);
-    font-weight: 700;
-}
-.MainContainer .seccion1 .containerMoney .tablaMoney{
-    border-radius: 5px;
-    background: #ffffff;
+.MainContainer .seccion1 .ContainerTasa .containerMoney{
     width: 80%;
-    box-shadow: 10px 10px 10px rgba(198, 198, 198, 0.3);
+    display: flex;
+    flex-direction: column;
 }
-.MainContainer .seccion1 .containerMoney .tablaMoney .CajaCoin{
+.MainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin{
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 10px;
+    align-items: center;
 }
-.MainContainer .seccion1 .containerMoney .tablaMoney .CajaCoin:nth-child(1),
-.MainContainer .seccion1 .containerMoney .tablaMoney .CajaCoin:nth-child(2),
-.MainContainer .seccion1 .containerMoney .tablaMoney .CajaCoin:nth-child(3){
-    border-bottom: 1px solid var(--RayaBorde);
+.MainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin p{
+    color: #ffff;
+    font-weight: bold;
 }
-.MainContainer .seccion1 .containerMoney .tablaMoney .price{
+.MainContainer .seccion1 .ContainerTasa .containerMoney .CajaCoin td:nth-child(2) p{
+    width: 90px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.MainContainer .seccion1 .containerMoney .tablaMoney .price img{
-    padding-left: 10px;
+.MainContainer .seccion1 .ContainerTasa .containerMoney .titleMoney{
+    text-align: center;
+    color: var(--ColorOrange);
+    padding: 10px 0 0 0;
+    font-weight: bold;
+}.MainContainer .seccion1 .ContainerTasa .containerMoney .titleMoneyBlue{
+    color: var(--colorBlueText);
 }
-.MainContainer .seccion1 .containerMoney .tablaMoneyBlue{
-    background-color: var(--colorSoftBlue);
+.MainContainer .seccion1 .ContainerTasa .containerMoney .tasaMoney .CajaCoin .LogoCripto{
+    width: 15px;
+    height: 15px;
 }
-.MainContainer .seccion1 .containerMoney .infActualMoney{
+.MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney{
     width: 100%;
     height: 40px;
+    margin: 0 0 10px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #FFE9D5;
+    align-items: center;
     border-radius: 15px;
-}
-.MainContainer .seccion1 .containerMoney .infActualMoney p{
+    background-color: var(--ColorSofOrange);
     font-size: var(--mn);
     font-weight: bold;
 }
-.MainContainer .seccion1 .containerMoney .infActualMoney p span{
-    font-weight: 400;
-    color: var(--ColorGrayText);
-}
-.MainContainer .seccion1 .containerMoney .titleMoneyBlue{
-    color: var(--colorBlueText);
-    font-weight: 700;
-}
-.MainContainer .seccion1 .containerMoney .infActualMoneyBlue{
+.MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoneyBlue{
     background-color: var(--colorSoftBlue);
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
 }
-.MainContainer .seccion1 .containerMoney .infActualMoneyBlue p{
-    font-weight: 700;
-}
-.MainContainer .seccion1 .containerMoney .infActualMoneyBlue p span{
-    font-weight: 400;
-    font-size: var(--mn);
+.MainContainer .seccion1 .ContainerTasa .containerMoney .infActualMoney p span{
     color: var(--ColorGrayTextPrice);
+    font-size: var(--mn);
 }
 /* seccion 2 */
 .MainContainer .seccion2{
@@ -295,7 +278,7 @@ header .primaryButton:hover{
     color: var(--ColorGrayText);
 }
 .MainContainer .seccion4 .containerPlan{
-    background-color: #ffff;
+    background-color: #1C2833;
     scroll-snap-align: center;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 8px;
@@ -305,6 +288,7 @@ header .primaryButton:hover{
     height: 260px;
     margin: 50px 20px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
@@ -324,6 +308,9 @@ header .primaryButton:hover{
     color: #ffff;
     font-weight: bold;
 }
+.MainContainer .seccion4 .containerPlan .plan1 p{
+    color: #fff;
+}
 .MainContainer .seccion4 .containerPlan .plan1 p:nth-child(2){
     text-align: center;
     font-weight: bold;
@@ -337,7 +324,7 @@ header .primaryButton:hover{
 }
 .MainContainer .seccion4 .containerPlan .plan1 p:nth-child(4){
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px 10px;
 }
 .MainContainer .seccion4 .container .selectPlan{
     width: 150px;
@@ -346,6 +333,7 @@ header .primaryButton:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     border: 2px solid var(--ColorOrange);
 }
 .MainContainer .seccion4 .container .selectPlan p{

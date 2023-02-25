@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style.css" media="(min-width:320px)">
-    <link rel="stylesheet" href="table.css" media="(min-width:580px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width:580px)">
     <link rel="stylesheet" href="desktop.css" media="(min-width:930px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,77 +35,32 @@
                     </figure>
                     <p class="tasaInf">Visibilizamos todas las tasas de cambio.</p>
                     <p class="tasaTimeInf">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
-                    <article class="ContainerTasas">
+                <article class="Container-de-las-tasas">
+                    <article class="ContainerTasa">
                         <article class="containerMoney">
-                            <p class="titleMoney">Monedas</p>
-                            <div class="tablaMoney">
-                                <div class="CajaCoin CajaCoin1">
-                                    <p>Bitcoin</p>
-                                    <div class="price">
-                                        <p>$:1.96</p>
-                                        <img src="./assets/icons/trending-down.svg" alt="BajaPrecio">
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin2">
-                                    <p>Ethereum</p>
-                                    <div class="price">
-                                        <p>$:0.07</p>
-                                        <img src="./assets/icons/trending-up.svg" alt="BajaPrecio">
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin3">
-                                    <p>Ripple</p>
-                                    <div class="price">
-                                        <p>$:2.15</p>
-                                        <img src="./assets/icons/trending-down.svg" alt="BajaPrecio">
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin4">
-                                    <p>Stellar</p>
-                                    <div class="price">
-                                        <p>$:4.96</p>
-                                        <img src="./assets/icons/trending-down.svg" alt="BajaPrecio">
-                                    </div>
-                                </div>
-                            </div>
-                            <aside class="infActualMoney">
-                                <p>Actualizado:<span> 19 Julio 23:45</span></p>
-                            </aside>
+                           <p class="titleMoney">Monedas</p>
+                                <table class="tasaMoney">
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Bitcoin</p></td><td><p>$: 1.96 <img src="./assets/icons/trending-down.svg" alt="BajaPrecio"><img src="./assets/icons/Bitcoin.svg.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Ethereum</p></td><td><p>$: 0.07 <img src="./assets/icons/trending-up.svg" alt="SubePrecio"><img src="./assets/icons/ethereum-icon.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Ripple</p></td><td><p>$: 2.15 <img src="./assets/icons/trending-down.svg" alt="BajaPrecio"><img src="./assets/icons/Ripple-XRP-icon.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Stellar</p></td><td><p>$: 4.96 <img src="./assets/icons/trending-down.svg" alt="BajaPrecio"><img src="./assets/icons/Stellar.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                </table>
+                            <aside class="infActualMoney"><p>Actualizado: <span>19 Julio 23:45</span></p></aside>
                         </article>
+                    </article>
+                    <article class="ContainerTasa">
                         <article class="containerMoney">
-                            <p class="titleMoneyBlue">Comisiones</p>
-                            <div class="tablaMoney">
-                                <div class="CajaCoin CajaCoin1">
-                                    <p>Britade</p>
-                                    <div class="price">
-                                        <p>$ 12.96</p>
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin2">
-                                    <p>Bripreco</p>
-                                    <div class="price">
-                                        <p>$ 13.07</p>
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin3">
-                                    <p>Novadax</p>
-                                    <div class="price">
-                                        <p>$ 13.15</p>
-                                    </div>
-                                </div>
-                                <div class="CajaCoin CajaCoin4">
-                                    <p>Coinext</p>
-                                    <div class="price">
-                                        <p>$ 14.96</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <aside class="infActualMoneyBlue">
-                                <p>Actualizado:<span> 19 Julio 23:45</span></p>
-                            </aside>
+                           <p class="titleMoney titleMoneyBlue">Comisiones</p>
+                                <table class="tasaMoney">
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Bitrade</p></td><td><p>$: 12.96 <img src="./assets/icons/logo-bitrade.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Bripreco</p></td><td><p>$: 13.07 <img src="./assets/icons/bitpreco.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Novadax</p></td><td><p>$: 13.15 <img src="./assets/icons/novadax.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                    <tr class="CajaCoin CajaCoin1"><td><p>Coinext</p></td><td><p>$: 14.96 <img src="./assets/icons/Coinext.png" alt="LogoCripto" class="LogoCripto"></p></td></tr>
+                                </table>
+                            <aside class="infActualMoney infActualMoneyBlue"><p>Actualizado: <span>19 Julio 23:45</span></p></aside>
                         </article>
-                    </article>    
-                </div>
+                    </article>
+                </article>    
             </section>
             <section class="seccion2 seccion">
                 <figure class="logo-batata">
